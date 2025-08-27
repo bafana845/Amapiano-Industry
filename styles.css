@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url('images/amapiano-concert.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;    
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #f1c40f;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin: 15px 0;
+}
+
+.navbar {
+    background: #333;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.navbar ul li {
+    margin: 10px 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #f1c40f;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center
+}
+
+section h2 {
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f1c40f;
+    color: #111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #d4ac0d;
+}
+
+.countdown {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #f1c40f;
+}
+
+footer {
+    text-align:center;
+    padding: 20px;
+    background: #222;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .navbar ul {
+        flex-direction: column;
+    }
+}
